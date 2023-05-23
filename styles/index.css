@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500;700;800&display=swap");
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue: rgb(78, 33, 202);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+#result {
+  width: 50%;
+  background: linear-gradient(180deg, var(--Light-slate-blue), var(--Light-royal-blue));
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 30px;
+}
+#result h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--White);
+}
+#result h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--White);
+}
+#result h3 {
+  color: var(--Light-lavender);
+}
+
+#result-percentage {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--Violet-blue), var(--Persian-blue));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#result-percentage p {
+  color: var(--Light-lavender);
+}
+
+#result-description {
+  text-align: center;
+}
+#result-description p {
+  padding-top: 10px;
+  color: var(--Light-lavender);
+}
+
+#summary {
+  width: 50%;
+  border-radius: 0 1.5rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px 25px;
+}
+#summary h3 {
+  color: var(--Dark-gray-blue);
+}
+
+.summary-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.summary-results #sub-container {
+  display: flex;
+  align-items: center;
+}
+.summary-results #sub-container img {
+  padding-right: 7px;
+  width: 22px;
+  height: 16px;
+}
+.summary-results .right-align {
+  color: var(--Dark-gray-blue);
+}
+.summary-results .light-font {
+  color: var(--Light-lavender);
+}
+.summary-results .red-font {
+  color: var(--Light-red);
+  opacity: 0.8;
+}
+.summary-results .yellow-font {
+  color: var(--Orangey-yellow);
+  opacity: 0.8;
+}
+.summary-results .green-font {
+  color: var(--Green-teal);
+  opacity: 0.8;
+}
+.summary-results .blue-font {
+  color: var(--Cobalt-blue);
+  opacity: 0.8;
+}
+
+.summary-result:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.summary-result:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.red {
+  background-color: rgba(255, 87, 87, 0.1);
+}
+
+.yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.blue {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+#continue-button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--Dark-gray-blue);
+  border: none;
+  border-radius: 30px;
+}
+#continue-button p {
+  color: var(--White);
+}
+
+#continue-button:hover {
+  background: linear-gradient(180deg, var(--Light-slate-blue), var(--Light-royal-blue));
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-family: Hanken Grotesk, sans-serif;
+  background-color: var(--White);
+}
+
+main {
+  background-color: var(--White);
+  width: 460px;
+  height: 310px;
+  display: flex;
+  margin: 25vh auto 0 auto;
+  box-shadow: 6px 4px 10px 4px var(--Pale-blue);
+  border-radius: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+  margin-top: 50px;
+}
+.attribution a {
+  color: blue;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    height: 100%;
+  }
+  main {
+    width: 100%;
+    height: 95%;
+    flex-direction: column;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  #result {
+    width: 100%;
+    height: 50%;
+    border-radius: 0 0 1.5rem 1.5rem;
+    padding: 15px 50px;
+  }
+  #summary {
+    width: 100%;
+    height: 50%;
+    padding: 10px 25px;
+  }
+  .summary-results {
+    padding: 15px;
+  }
+  #continue-button {
+    padding: 15px 0;
+  }
+  .attribution {
+    margin-top: 5px;
+    font-size: 9px;
+  }
+}/*# sourceMappingURL=index.css.map */
