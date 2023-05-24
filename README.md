@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/kenzo-wegher/frontendmentor-results-summary-component-main)
-- Live Site URL: [Add live site URL here](https://kenzo-wegher.github.io/frontendmentor-results-summary-component-main/)
+- Solution URL: [Solution URL](https://github.com/kenzo-wegher/frontendmentor-results-summary-component-main)
+- Live Site URL: [Live site URL](https://kenzo-wegher.github.io/frontendmentor-results-summary-component-main/)
 
 ## My process
 
