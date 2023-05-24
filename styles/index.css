@@ -198,7 +198,7 @@ p {
   color: blue;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   body {
     height: 100%;
   }
@@ -230,5 +230,10 @@ p {
   .attribution {
     margin-top: 5px;
     font-size: 9px;
+  }
+}
+@media only screen and (max-height: 750px) {
+  .summary-results {
+    padding: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
