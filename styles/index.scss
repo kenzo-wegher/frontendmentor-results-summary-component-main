@@ -109,4 +109,28 @@ p {
     #reaction, #memory, #verbal, #visual {
         padding: 10px;
     }
+
+    #continue-button {
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-height: 680px) {
+
+    html {
+        font-size: 13px;
+    }
+
+    #result-percentage {
+        width: 135px;
+        height: 135px;
+    }
+
+    #reaction, #memory, #verbal, #visual {
+        padding: 8px;
+    }
+
+    #continue-button {
+        padding: 8px 0;
+    }
 }
