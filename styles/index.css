@@ -22,132 +22,112 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 30px;
+  padding: 30px;
 }
 #result h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--White);
-}
-#result h2 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--White);
-}
-#result h3 {
   color: var(--Light-lavender);
 }
 
 #result-percentage {
-  width: 125px;
-  height: 125px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(180deg, var(--Violet-blue), var(--Persian-blue));
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#result-percentage #result-bold {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--White);
 }
 #result-percentage p {
   color: var(--Light-lavender);
 }
 
 #result-description {
+  padding: 0 20px;
   text-align: center;
 }
 #result-description p {
-  padding-top: 10px;
+  margin-top: 10px;
   color: var(--Light-lavender);
 }
 
 #summary {
   width: 50%;
   border-radius: 0 1.5rem 1.5rem 0;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 15px 25px;
-}
-#summary h3 {
-  color: var(--Dark-gray-blue);
+  justify-content: space-between;
 }
 
 .summary-results {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px 10px;
   border-radius: 5px;
-  margin: 10px 0;
 }
-.summary-results #sub-container {
-  display: flex;
-  align-items: center;
-}
-.summary-results #sub-container img {
-  padding-right: 7px;
-  width: 22px;
-  height: 16px;
-}
-.summary-results .right-align {
+.summary-results .bold {
   color: var(--Dark-gray-blue);
 }
-.summary-results .light-font {
-  color: var(--Light-lavender);
+.summary-results h3 {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 500;
 }
-.summary-results .red-font {
+.summary-results p {
+  color: var(--Light-lavender);
+  margin-left: auto;
+}
+
+#reaction {
+  background-color: rgba(255, 87, 87, 0.1);
+  padding: 15px;
+}
+#reaction h3 {
   color: var(--Light-red);
   opacity: 0.8;
 }
-.summary-results .yellow-font {
+
+#memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  padding: 15px;
+}
+#memory h3 {
   color: var(--Orangey-yellow);
   opacity: 0.8;
 }
-.summary-results .green-font {
+
+#verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  padding: 15px;
+}
+#verbal h3 {
   color: var(--Green-teal);
   opacity: 0.8;
 }
-.summary-results .blue-font {
+
+#visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  padding: 15px;
+}
+#visual h3 {
   color: var(--Cobalt-blue);
   opacity: 0.8;
 }
 
-.summary-result:first-of-type {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.summary-result:last-of-type {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.red {
-  background-color: rgba(255, 87, 87, 0.1);
-}
-
-.yellow {
-  background-color: hsla(39, 100%, 56%, 0.1);
-}
-
-.green {
-  background-color: hsla(166, 100%, 37%, 0.1);
-}
-
-.blue {
-  background-color: hsla(234, 85%, 45%, 0.1);
-}
-
 #continue-button {
   width: 100%;
-  padding: 10px 0;
+  padding: 15px 0;
   background-color: var(--Dark-gray-blue);
   border: none;
   border-radius: 30px;
-}
-#continue-button p {
   color: var(--White);
+  font-size: 1rem;
 }
 
 #continue-button:hover {
@@ -166,30 +146,38 @@ html {
   height: 100vh;
   font-family: Hanken Grotesk, sans-serif;
   background-color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  font-size: 18px;
 }
 
 main {
   background-color: var(--White);
-  width: 460px;
-  height: 310px;
+  width: 700px;
+  height: 500px;
   display: flex;
-  margin: 25vh auto 0 auto;
   box-shadow: 6px 4px 10px 4px var(--Pale-blue);
   border-radius: 1.5rem;
 }
 
-h3 {
-  font-size: 1rem;
+h1 {
+  font-size: 1.2rem;
   font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--White);
 }
 
 p {
-  font-size: 0.7rem;
-  font-weight: 500;
+  font-size: 1rem;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.8rem;
   text-align: center;
   color: hsl(228, 45%, 44%);
   margin-top: 50px;
@@ -199,6 +187,9 @@ p {
 }
 
 @media only screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
   body {
     height: 100%;
   }
@@ -216,12 +207,16 @@ p {
     border-radius: 0 0 1.5rem 1.5rem;
     padding: 15px 50px;
   }
+  #result-percentage {
+    width: 160px;
+    height: 160px;
+  }
   #summary {
     width: 100%;
     height: 50%;
-    padding: 10px 25px;
+    padding: 20px;
   }
-  .summary-results {
+  #reaction, #memory, #verbal, #visual {
     padding: 15px;
   }
   #continue-button {
@@ -229,11 +224,11 @@ p {
   }
   .attribution {
     margin-top: 5px;
-    font-size: 9px;
+    font-size: 0.6rem;
   }
 }
 @media only screen and (max-height: 750px) {
-  .summary-results {
+  #reaction, #memory, #verbal, #visual {
     padding: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
