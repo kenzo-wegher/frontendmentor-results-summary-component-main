@@ -17,21 +17,19 @@
 
   <main>
 
-    <div alt="result" id="result">
+    <div id="result">
 
-      <div alt="result-header" id="result-header">
-        <h3>Your Result
-        </h3>
+      <div id="result-header">
+        <h1>Your Result
+        </h1>
       </div>
 
-      <div alt="result-percentage" id="result-percentage">
-        <h1>76
-        </h1>
-        <p>of 100
+      <div id="result-percentage">
+        <p><span id="result-bold">76</span><br>of 100
         </p>
       </div>
 
-      <div alt="result-description" id="result-description">
+      <div id="result-description">
         <h2>Great
         </h2>
         <p>You scored higher than 65% of the people who have taken these tests.
@@ -40,60 +38,44 @@
 
     </div>
 
-    <div alt="summary" id="summary">
+    <div id="summary">
 
-      <div alt="summary-header" id="summary-header">
-        <h3>Summary
+      <h1>Summary
+      </h1>
+
+      <div class="summary-results" id="reaction">
+        <img alt="" src="assets/images/icon-reaction.svg"></img>
+        <h3>Reaction
         </h3>
-      </div>
-
-      <div alt="summary-percentage" id="summary-percentage">
-
-        <div class="summary-results red" alt="Reaction">
-          <div id="sub-container">
-            <img alt="" src="assets/images/icon-reaction.svg"></img>
-            <p class="red-font">Reaction
-            </p>
-          </div>
-          <p><span class="right-align">80 <span class="light-font">/ 100</span></span>
-          </p>
-        </div>
-
-        <div class="summary-results yellow" alt="Memory">
-          <div id="sub-container">
-            <img alt="" src="assets/images/icon-memory.svg"></img>
-            <p class="yellow-font">Memory
-            </p>
-          </div>
-          <p><span class="right-align">92 <span class="light-font">/ 100</span></span>
-          </p>
-        </div>
-
-        <div class="summary-results green" alt="Verbal">
-          <div id="sub-container">
-            <img alt="" src="assets/images/icon-verbal.svg"></img>
-            <p class="green-font">Verbal
-            </p>
-          </div>
-          <p><span class="right-align">61 <span class="light-font">/ 100</span></span>
-          </p>
-        </div>
-
-        <div class="summary-results blue" alt="Visual">
-          <div id="sub-container">
-            <img alt="" src="assets/images/icon-visual.svg"></img>
-            <p class="blue-font">Visual
-            </p>
-          </div>
-          <p><span class="right-align">72 <span class="light-font">/ 100</span></span>
-          </p>
-        </div>
-
-      </div>
-
-      <button alt="continue-button" id="continue-button">
-        <p>Continue
+        <p><span class="bold">80 </span>/ 100
         </p>
+      </div>
+
+      <div class="summary-results" id="memory">
+        <img alt="" src="assets/images/icon-memory.svg"></img>
+        <h3>Memory
+        </h3>
+        <p><span class="bold">92 </span>/ 100
+        </p>
+      </div>
+
+      <div class="summary-results" id="verbal">
+        <img alt="" src="assets/images/icon-verbal.svg"></img>
+        <h3>Verbal
+        </h3>
+        <p><span class="bold">61 </span>/ 100
+        </p>
+      </div>
+
+      <div class="summary-results" id="visual">
+        <img alt="" src="assets/images/icon-visual.svg"></img>
+        <h3>Visual
+        </h3>
+        <p><span class="bold">72 </span>/ 100
+        </p>
+      </div>
+
+      <button id="continue-button">Continue
       </button>
     </div>
   
